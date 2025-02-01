@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.signup">
+    <ImageView fx:id="imageviewbg" fitHeight="406.0" fitWidth="608.0" focusTraversable="true" layoutX="-7.0" layoutY="-3.0" opacity="0.25" pickOnBounds="true">
+        <Image url="@../img/img1.jpg" />
+    </ImageView>
+    <ImageView fx:id="imageviewleftmain" fitHeight="406.0" fitWidth="325.0" focusTraversable="true" layoutX="-38.0" layoutY="-1.0" pickOnBounds="true">
+        <Image url="@../img/img3.jpg" />
+    </ImageView>
+    <ImageView fx:id="imageviewicon" fitHeight="44.0" fitWidth="105.0" focusTraversable="true" layoutX="7.0" layoutY="7.0" pickOnBounds="true">
+        <Image url="@../img/icon.jpg" />
+    </ImageView>
+    <Label graphicTextGap="5.0" layoutX="370.0" layoutY="4.0" opacity="0.88" prefHeight="56.0" prefWidth="147.0" text="Sign Up" textAlignment="CENTER">
+        <font>
+            <Font name="Century" size="39.0" />
+        </font>
+    </Label>
+    <JFXTextField fx:id="username" layoutX="344.0" layoutY="105.0" prefHeight="28.0" prefWidth="209.0" promptText="User Name">
+        <font>
+            <Font name="System Italic" size="13.0" />
+        </font>
+    </JFXTextField>
+    <JFXPasswordField fx:id="password" layoutX="344.0" layoutY="157.0" prefHeight="28.0" prefWidth="209.0" promptText="Password">
+        <font>
+            <Font name="System Italic" size="13.0" />
+        </font>
+    </JFXPasswordField>
+    <JFXRadioButton layoutX="328.0" layoutY="208.0" prefHeight="28.0" prefWidth="220.0" text="I have agreed to the privacy policy">
+        <font>
+            <Font size="11.0" />
+        </font>
+        <selectedColor>
+            <Color green="0.4" blue="1.0" />
+        </selectedColor>
+    </JFXRadioButton>
+    <JFXButton fx:id="signupbtn" layoutX="393.0" layoutY="265.0" onAction="#signup" prefHeight="37.0" prefWidth="105.0" style="-fx-background-color: #0066ff;" text="Sign Up" textFill="WHITE">
+        <font>
+            <Font name="System Bold Italic" size="15.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+      <graphic>
+         <ImageView fitHeight="34.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../img/login.png" />
+            </image>
+         </ImageView>
+      </graphic>
+    </JFXButton>
+    <Label layoutX="379.0" layoutY="384.0" text="© Clothify Store (PVT) Ltd.">
+        <font>
+            <Font name="Constantia Italic" size="12.0" />
+        </font>
+    </Label>
+    <JFXButton fx:id="loginbtn" layoutX="423.0" layoutY="321.0" onAction="#gotologin" style="-fx-background-color: #fcba03;" text="Login">
+        <effect>
+            <InnerShadow />
+        </effect>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </JFXButton>
+</AnchorPane>

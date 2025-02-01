@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="406.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.product1.ProductFormController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3b73ff" height="59.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+        <Label layoutX="184.0" layoutY="12.0" text="Update Product Form" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Label>
+        <JFXButton layoutX="17.0" layoutY="17.0" onAction="#backtohome" style="-fx-background-color: orange;" text="&lt;-" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton layoutX="517.0" layoutY="370.0" onAction="#btnReloadOnAction" prefHeight="30.0" prefWidth="72.0" style="-fx-background-color: yellowgreen; -fx-border-radius: 10px;" text="Reload" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+      <JFXButton layoutX="268.0" layoutY="361.0" onAction="#btnUpdateOnAction" prefHeight="36.0" prefWidth="88.0" style="-fx-background-color: green; -fx-border-radius: 10px;" text="Update" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="txtId" layoutX="82.0" layoutY="76.0" onAction="#idTextActionPerformed" promptText="ID" styleClass="textField" stylesheets="@../css/style.css" />
+      <TextField fx:id="txtName" layoutX="245.0" layoutY="76.0" promptText="Name" styleClass="textField" stylesheets="@../css/style.css" />
+      <TextField fx:id="txtSize" layoutX="83.0" layoutY="113.0" promptText="Size" styleClass="textField" stylesheets="@../css/style.css" />
+      <TextField fx:id="txtCategory" layoutX="405.0" layoutY="76.0" promptText="Category" styleClass="textField" stylesheets="@../css/style.css" />
+      <TextField fx:id="txtPrice" layoutX="245.0" layoutY="112.0" promptText="Price" styleClass="textField" stylesheets="@../css/style.css" />
+      <TextField fx:id="txtStock" layoutX="405.0" layoutY="112.0" promptText="Stock" styleClass="textField" stylesheets="@../css/style.css" />
+      <TableView fx:id="tblProducts" layoutY="160.0" prefHeight="183.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="53.0" text="ID" />
+            <TableColumn fx:id="colName" prefWidth="107.0" text="Name" />
+            <TableColumn fx:id="colCategory" prefWidth="126.0" text="Category" />
+            <TableColumn fx:id="colSize" prefWidth="106.0" text="Size" />
+            <TableColumn fx:id="colPrice" prefWidth="104.0" text="Price" />
+            <TableColumn fx:id="colStock" prefWidth="121.0" text="Stock" />
+         </columns>
+      </TableView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="406.0" prefWidth="600.0" style="-fx-background-color: azure;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.product2.ProductFormController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3b73ff" height="59.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+        <Label layoutX="187.0" layoutY="12.0" text="View Product Form" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Label>
+        <JFXButton layoutX="508.0" layoutY="367.0" onAction="#btnReloadOnAction" prefHeight="36.0" prefWidth="77.0" style="-fx-background-color: yellowgreen; -fx-border-radius: 10px;" text="Reload" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton layoutX="11.0" layoutY="15.0" onAction="#backtohome" style="-fx-background-color: orange;" text="&lt;-" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+      <TableView fx:id="tblProducts" layoutX="-1.0" layoutY="74.0" prefHeight="290.0" prefWidth="600.0" style="-fx-background-color: #bff8f8;">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="53.0" text="ID" />
+            <TableColumn fx:id="colName" prefWidth="107.0" text="Name" />
+            <TableColumn fx:id="colCategory" prefWidth="126.0" text="Category" />
+            <TableColumn fx:id="colSize" prefWidth="106.0" text="Size" />
+            <TableColumn fx:id="colPrice" prefWidth="105.0" text="Price" />
+            <TableColumn fx:id="colStock" prefWidth="120.0" text="Stock" />
+         </columns>
+      </TableView>
+    </children>
+</AnchorPane>

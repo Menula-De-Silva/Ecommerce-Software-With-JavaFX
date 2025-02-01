@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="677.0" prefWidth="422.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.bill.billcontroller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3b73ff" height="59.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="435.0" />
+      <JFXButton layoutX="16.0" layoutY="16.0" onAction="#backtohome" style="-fx-background-color: orange;" text="&lt;-" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="201.0" layoutY="10.0" text="Bill " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="67.0" prefHeight="36.0" prefWidth="75.0" text="Order Id :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtorderid" layoutX="92.0" layoutY="67.0" prefHeight="36.0" prefWidth="86.0" text="txtorderid" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="95.0" prefHeight="36.0" prefWidth="86.0" text="Customer :" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtcustomername" layoutX="102.0" layoutY="95.0" prefHeight="36.0" prefWidth="126.0" text="txtcustomername" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtdate" alignment="CENTER" contentDisplay="CENTER" layoutX="294.0" layoutY="65.0" prefHeight="36.0" prefWidth="137.0" text="Date" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="txttime" alignment="CENTER" contentDisplay="CENTER" layoutX="293.0" layoutY="97.0" prefHeight="36.0" prefWidth="137.0" text="Time" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblproducts" layoutX="-5.0" layoutY="164.0" prefHeight="333.0" prefWidth="440.0">
+         <columns>
+            <TableColumn fx:id="colitemcodebill" prefWidth="94.0" text="Item Code" />
+            <TableColumn fx:id="description" prefWidth="105.0" text="Name" />
+            <TableColumn fx:id="colqtybill" prefWidth="52.0" text="QTY" />
+            <TableColumn fx:id="colunitpricebill" prefWidth="93.0" text="Unit Price" />
+            <TableColumn fx:id="coltotalbill" prefWidth="93.0" text="Total" />
+         </columns>
+      </TableView>
+      <Label fx:id="lblbilltotal" alignment="CENTER" contentDisplay="CENTER" layoutX="152.0" layoutY="541.0" text="Total : 0.00" textFill="CRIMSON" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnprint" layoutX="48.0" layoutY="606.0" onAction="#btnprintaction" prefHeight="53.0" prefWidth="340.0" style="-fx-background-color: yellowgreen; -fx-border-radius: 10px;" text="Print" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
