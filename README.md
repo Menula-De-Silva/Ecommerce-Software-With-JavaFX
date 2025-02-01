@@ -1,7 +1,7 @@
 # Ecommerce Software with JavaFX
 
-![Java](https://img.shields.io/badge/Java-17-blue)
-![JavaFX](https://img.shields.io/badge/JavaFX-17-orange)
+![Java](https://img.shields.io/badge/Java-19-blue)
+![JavaFX](https://img.shields.io/badge/JavaFX-19-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 This is an Ecommerce Software application built using **JavaFX**. It provides a user-friendly interface for managing products, customers, and orders in an online store. The application is designed to be modular, scalable, and easy to extend.
@@ -28,9 +28,12 @@ This is an Ecommerce Software application built using **JavaFX**. It provides a 
 
 Before running the application, ensure you have the following installed:
 
-- **Java Development Kit (JDK) 17** or higher.
-- **JavaFX SDK 17** or higher.
+- **Java Development Kit (JDK) 19** or higher.
+- **JavaFX SDK 19** or higher.
 - **Maven** (for dependency management).
+- **IntelliJ** (for better experience).
+
+
 
 ## ⬇ Installation
 
@@ -41,9 +44,13 @@ Before running the application, ensure you have the following installed:
 
 ## 📞 Contact Me
 
-1. **Email**:
+**Email**:
    ```bash
    rusirunavanjaya2004@gmail.com
+```
+
+
+
 
 **Happy Coding! 🚀**
 
